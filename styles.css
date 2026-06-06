@@ -251,8 +251,8 @@ ul { list-style: none; }
   align-items: center;
 }
 .nav__logo-img {
-  height: 70px;
-  width: 260px;
+  height: 350px;
+  width: auto;
   object-fit: contain;
   display: block;
 }
