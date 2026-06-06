@@ -1397,9 +1397,8 @@ ul { list-style: none; }
   height: 44px;
   width: auto;
   object-fit: contain;
-  filter: brightness(0) invert(1);
   display: block;
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 .footer__nav {
@@ -1417,6 +1416,18 @@ ul { list-style: none; }
   transition: color 0.2s;
 }
 .footer__nav a:hover { color: var(--text); }
+
+.footer__contact {
+  margin-bottom: 1.5rem;
+}
+.footer__contact a {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  letter-spacing: 0.04em;
+  transition: color 0.2s;
+}
+.footer__contact a:hover { color: var(--text); }
 
 .footer__divider {
   height: 1px;
