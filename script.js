@@ -158,20 +158,32 @@ document.addEventListener('DOMContentLoaded', () => {
   const formSuccess = document.getElementById('formSuccess');
 
   if (form) {
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
       const btn = form.querySelector('.form__submit');
       btn.textContent = 'Sending...';
       btn.disabled = true;
 
-      // Simulate async send
-      setTimeout(() => {
-        form.reset();
-        btn.textContent = 'Send Message →';
-        btn.disabled = false;
-        formSuccess.classList.add('show');
-        setTimeout(() => formSuccess.classList.remove('show'), 5000);
-      }, 1200);
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+          form.reset();
+          formSuccess.classList.add('show');
+          setTimeout(() => formSuccess.classList.remove('show'), 5000);
+        } else {
+          alert('Oops! Something went wrong. Please try again.');
+        }
+      } catch (err) {
+        alert('Network error. Please check your connection and try again.');
+      }
+
+      btn.textContent = 'Send Message →';
+      btn.disabled = false;
     });
   }
 

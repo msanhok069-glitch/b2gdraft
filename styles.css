@@ -83,7 +83,7 @@ body.loading { overflow: hidden; }
 .preloader__bar {
   height: 100%;
   width: 0%;
-  background: linear-gradient(90deg, #C8B8A0, #E8E4DF);
+  background: linear-gradient(90deg, #FFFFFF, #E8E4DF);
   border-radius: 1px;
   transition: width 0.05s linear;
 }
@@ -144,8 +144,8 @@ body:not(.loading) .nav {
   --text:      #E8E4DF;
   --text-muted:#8A8580;
   --text-dim:  #5A5550;
-  --accent:    #C8B8A0;
-  --accent-2:  #D4C4AC;
+  --accent:    #FFFFFF;
+  --accent-2:  #E8E4DF;
   --white:     #FAFAF8;
   --black:     #0C0C0C;
 
