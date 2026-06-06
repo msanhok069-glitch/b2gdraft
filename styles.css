@@ -251,10 +251,9 @@ ul { list-style: none; }
   align-items: center;
 }
 .nav__logo-img {
-  height: 36px;
-  width: auto;
+  height: 70px;
+  width: 260px;
   object-fit: contain;
-  filter: brightness(0) invert(1);
   display: block;
 }
 
@@ -1394,8 +1393,8 @@ ul { list-style: none; }
   align-items: center;
 }
 .footer__logo-img {
-  height: 44px;
-  width: auto;
+  height: 70px;
+  width: 260px;
   object-fit: contain;
   display: block;
   opacity: 0.95;
