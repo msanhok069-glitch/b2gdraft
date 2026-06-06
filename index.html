@@ -14,7 +14,7 @@
 <body class="loading">
 
   <!-- PRELOADER -->
-  <div class="preloader" id="preloader">
+  <div class="preloader" id="preloader" aria-hidden="true">
     <div class="preloader__bg preloader__bg--left"></div>
     <div class="preloader__bg preloader__bg--right"></div>
     <div class="preloader__content">
@@ -41,7 +41,7 @@
   </nav>
 
   <!-- MOBILE MENU -->
-  <div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true" role="dialog" aria-label="Mobile navigation">
     <a href="#services" class="mobile-link">Services</a>
     <a href="#about" class="mobile-link">About</a>
     <a href="#contact" class="mobile-link">Get in Touch</a>
@@ -53,7 +53,7 @@
          SECTION 01 — HERO
     ═══════════════════════════════════════ -->
     <section class="hero" id="hero">
-      <div class="hero__ticker">
+      <div class="hero__ticker" aria-hidden="true">
         <div class="ticker__track">
           <span>Lead Generation</span><span class="dot">·</span>
           <span>Demand Generation</span><span class="dot">·</span>
@@ -312,62 +312,62 @@
         </div>
         <div class="faq__list">
           <div class="faq__item">
-            <button class="faq__q" aria-expanded="false">
+            <button class="faq__q" id="faq-btn-1" aria-expanded="false" aria-controls="faq-ans-1">
               <span>01</span>
               <span>What services do you offer?</span>
               <span class="faq__icon">+</span>
             </button>
-            <div class="faq__a">
+            <div class="faq__a" id="faq-ans-1" role="region" aria-labelledby="faq-btn-1">
               <p>We offer Lead Generation, Demand Generation, AI Calling Agents, AI Chatbot Agents, AI-Based SEO, and 3D Website Development — all designed to build predictable pipeline for B2B businesses.</p>
             </div>
           </div>
           <div class="faq__item">
-            <button class="faq__q" aria-expanded="false">
+            <button class="faq__q" id="faq-btn-2" aria-expanded="false" aria-controls="faq-ans-2">
               <span>02</span>
               <span>What is your typical turnaround time?</span>
               <span class="faq__icon">+</span>
             </button>
-            <div class="faq__a">
+            <div class="faq__a" id="faq-ans-2" role="region" aria-labelledby="faq-btn-2">
               <p>Starter campaigns launch within 7 days. Full-scope AI systems and website builds typically take 2–4 weeks depending on complexity and scope.</p>
             </div>
           </div>
           <div class="faq__item">
-            <button class="faq__q" aria-expanded="false">
+            <button class="faq__q" id="faq-btn-3" aria-expanded="false" aria-controls="faq-ans-3">
               <span>03</span>
               <span>How do your AI Calling Agents work?</span>
               <span class="faq__icon">+</span>
             </button>
-            <div class="faq__a">
+            <div class="faq__a" id="faq-ans-3" role="region" aria-labelledby="faq-btn-3">
               <p>Our AI calling systems engage prospects with natural, human-like conversations, qualify opportunities based on your criteria, and automatically schedule appointments — working 24/7 without human intervention.</p>
             </div>
           </div>
           <div class="faq__item">
-            <button class="faq__q" aria-expanded="false">
+            <button class="faq__q" id="faq-btn-4" aria-expanded="false" aria-controls="faq-ans-4">
               <span>04</span>
               <span>Can you handle both strategy and execution?</span>
               <span class="faq__icon">+</span>
             </button>
-            <div class="faq__a">
+            <div class="faq__a" id="faq-ans-4" role="region" aria-labelledby="faq-btn-4">
               <p>Absolutely. We are a full-service growth partner — from initial strategy and ICP definition through to campaign execution, AI deployment, and ongoing optimization.</p>
             </div>
           </div>
           <div class="faq__item">
-            <button class="faq__q" aria-expanded="false">
+            <button class="faq__q" id="faq-btn-5" aria-expanded="false" aria-controls="faq-ans-5">
               <span>05</span>
               <span>Do you offer brand strategy too?</span>
               <span class="faq__icon">+</span>
             </button>
-            <div class="faq__a">
+            <div class="faq__a" id="faq-ans-5" role="region" aria-labelledby="faq-btn-5">
               <p>Yes. Our demand generation service includes brand awareness building, market positioning, and prospect nurturing programs that establish your brand as the authority in your space.</p>
             </div>
           </div>
           <div class="faq__item">
-            <button class="faq__q" aria-expanded="false">
+            <button class="faq__q" id="faq-btn-6" aria-expanded="false" aria-controls="faq-ans-6">
               <span>06</span>
               <span>What's your process like?</span>
               <span class="faq__icon">+</span>
             </button>
-            <div class="faq__a">
+            <div class="faq__a" id="faq-ans-6" role="region" aria-labelledby="faq-btn-6">
               <p>We start with a discovery call to understand your ICP and goals, then build a custom growth strategy, deploy AI systems and campaigns, and continuously optimize based on data and results.</p>
             </div>
           </div>
@@ -449,7 +449,7 @@
   <footer class="footer">
     <div class="footer__top">
       <div class="footer__logo"><img src="assets/logo.png" alt="B2Growth Media" class="footer__logo-img" /></div>
-      <nav class="footer__nav">
+      <nav class="footer__nav" aria-label="Footer">
         <a href="#services">Services</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
